@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helmet v3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel = "stylesheet" type ="text/css" href ="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <h1>Hello Helmet v3</h1> </br>
+
+    <div id="cards-div">
+      <div class="cards">
+        <div class="card">
+          <p>Temperature</p>
+          <p>
+            <i class="fas fa-thermometer-half" style="color:#059e8a;"></i>
+            <span class="reading"><span id="temp"></span> &deg;C</span>
+          </p>
+        </div>
+        <div class="card">
+          <p>Humidity</p>
+          <p>
+            <i class="fas fa-tint" style="color:#00add6;"></i>
+            <span class="reading"><span id="hum"></span> &percnt;</span>
+          </p>
+        </div>
+        <div class="card">
+          <p>Forehead Temperature</p>
+          <p>
+            <i class="fas fa-thermometer-half" style="color:#059e8a;"></i>
+            <span class="reading"><span id="bodytemp"></span> &deg;C</span>
+          </p>
+        </div>
+        <div class="card">
+          <p>Heart Rate</p>
+          <p>
+            <i class="fas fa-heartbeat" style="color:#db1f57"></i>
+            <span class="reading"><span id="heart"></span> bpm</span>
+          </p>
+        </div>
+        <div class="card">
+          <p>SpO2</p>
+          <p>
+            <i class="fas fa-heartbeat" style="color:#db1f57"></i>
+            <span class="reading"><span id="spo2"></span> </span>
+          </p>
+        </div>
+        <div class="card">
+          <p>Fall?</p>
+          <p>
+            <i class="fas fa-running" style="color:#e9913f"></i>
+            <span class="reading"><span id="fall"></span></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class ="chartBox">
+      <canvas id="bodyTemperatureChart"></canvas>
+    </div>
+    <div class ="chartBox">
+      <canvas id="humidityChart"></canvas>
+    </div>
+    <div class ="chartBox">
+      <canvas id="temperatureChart"></canvas>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
